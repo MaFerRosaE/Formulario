@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Statics/css/formulario.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cuadro"><!--Cuadro que rodea al formulario-->
+        <!--Título-->
+        <h1>Formulario completo</h1>
+        <br>
+        <form id="mainForm"><!--Formulario-->
+            <!--Nombre-->
+            <label class="norm" for="nombre">Nombre completo:</label>
+            <br>
+            <input type="text" class="normal" id="nombre" name="nombre" required>
+            <br> 
+            <!--Edad-->
+            <label class="norm" for="edad" >Edad</label>
+            <br>
+            <input type="number" class="normal" id="edad" name="edad" min="1" max="130" placeholder="Ingresa tu edad" required>
+            <br>
+            <!--Código Postal-->
+            <label class="norm" for="cod_Postal">Código Postal</label>
+            <br>
+            <input type="number" class="normal" id="cod_Postal" name="cod_Postal" min="1" placeholder="Ingresa tu codigo postal: xxxxxx" required>
+            <br>
+            <!--Género-->
+            <label class="norm" for="genero">Género:</label>
+            <br>
+            <br>
+            <input type="radio" id="masculino" name="genero" value="masculino" requiered>
+            <label for="genero">Masculino</label>
+            <input type="radio" id="femenino" name="genero" value="femenino" requiered>
+            <label for="genero">Femenino</label>
+            <input type="radio" id="otroGen" name="genero" value="otro" requiered>
+            <label for="genero">Otro</label>
+            <br>
+            <br>
+            <!--Intereses-->
+            <label class="norm" for="intereses">Intereses(selecciona todos los que apliquen):</label>
+            <br>
+            <br>
+            <input type="checkbox" id="tec" name="intereses" value="tecnologia">
+            <label>Tecnología</label>
+            <input type="checkbox" id="deportes" name="intereses" value="deportes">
+            <label>Deportes</label>
+            <input type="checkbox" id="musica" name="intereses" value="musica">
+            <label>Música</label>
+            <input type="checkbox" id="arte" name="intereses" value="arte">
+            <label>Arte</label>
+            <br>
+            <br>
+            <!--Países-->
+            <label class="norm" for="pais">País</label>
+            <select id="pais" name="pais" required>
+                <option name="pais" value="none">Selecciona tu pais</option>
+                <option name="pais" value="mexico">México</option>
+                <option name="pais" value="usa">Estados Unidos</option>
+                <option name="pais" value="canada">Cánada</option>
+                <option name="pais" value="guatemala">Guatemala</option>
+                <option name="pais" value="belice">Belice</option>
+                <option name="pais" value="cuba">Cuba</option>
+                <option name="pais" value="honduras">Honduras</option>
+                <option name="pais" value="españa">España</option>
+                <option name="pais" value="venezuela">Venezuela</option>
+                <option name="pais" value="argentina">Argentina</option>
+                <option name="pais" value="otro">Otro</option>
+            </select>
+            <br>
+            <!--Comentarios adicionales-->
+            <label class="norm" for="comentarios">Comentarios adicionales:</label>
+            <br>
+            <textarea id="comentarios" name="comentarios" placeholder="Escribe tus comentarios aquí..."></textarea>
+            <br>
+            <!--Imagen-->
+            <label class="norm" for="imagen">Subir imagen:</label>
+            <br>
+            <input type="file" class="normal" accept="image/*" maxlength="">
+            <br>
+            <!--Submit-->
+            <input type="submit" id="submit" value="Enviar Formulario">
+        </form>
+    </div>
+    <script src="../Dynamics/JS/formulario.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+body{
+    display: flex;
+    background-color: rgb(104, 126, 233);
+    align-content: center;
+    justify-content: center;
+}
+.cuadro{
+    background-color: rgb(249,246,255);
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    height: 80%;
+    border: none;
+    border-radius: 25px;
+    align-content: center;
+    justify-content: center;
+}
+h1{
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    font-size: 60px;
+}
+form{
+    display: flexbox;
+    flex-wrap: wrap;
+    font-weight: bold;
+    width: 80%;
+    height: 80%;
+    padding: 0% 5% 5% 0%;
+    margin: 0% 5% 5% 0%;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+}
+input[class="normal"]{
+    border: 5px solid rgb(236, 233, 233);
+    border-radius: 5px;
+    width: 100%;
+    height: 30px;
+}
+select{
+    border: 5px solid rgb(236, 233, 233);
+    border-radius: 5px;
+    width: 100%;
+    height: 30px;
+}
+textarea{
+    border: 5px solid rgb(236, 233, 233);
+    border-radius: 5px;
+    width: 100%;
+    height: 60px;
+}
